@@ -1,9 +1,16 @@
+# Axis Wiki
+
 ---
-title: Welcome to Quartz
----
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+## 🌍 Locais
 
-
-# Teste Index
+### Cidades
+```dataview
+TABLE resumo AS "Descrição", regiao AS "Região"
+FROM "Wiki/Locais/Cidades"
+WHERE tipo = "cidade"
+SORT file.name ASC
+TABLE resumo AS "Descrição", regiao AS "Região"
+FROM "Wiki/Locais/Assentamentos"
+WHERE tipo = "assentamento"
+SORT file.name ASC
